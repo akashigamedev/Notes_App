@@ -14,19 +14,24 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.modifier.modifierLocalMapOf
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
 @Composable
-fun Note(){
-    Column( ) {
+fun Note(   ){
+    Column( horizontalAlignment = Alignment.CenterHorizontally ) {
 
-        Box(modifier = Modifier.size(120.dp).clip(RoundedCornerShape(10.dp)).background(Color.DarkGray).padding(16.dp)) {
-            Text("This is the description", color = Color.White, fontSize = 12.sp)
+        Box(modifier = Modifier
+            .size(120.dp)
+            .clip(RoundedCornerShape(10.dp))
+            .background(Color.DarkGray)
+            .padding(16.dp)) {
+            Text("This is the description", color = Color.White, fontSize = 16.sp )
 
         }
-        Text("Title", color = Color.White, fontSize = 12.sp,)
-        Text("Duration", color = Color.White, fontSize = 12.sp)
+        Text("Title", color = Color.White, fontSize = 20.sp, fontWeight = FontWeight.Bold)
+        Text("Duration", color = Color.White, fontSize = 20.sp, fontWeight = FontWeight.Bold)
         Text("Date", color = Color.White, fontSize = 12.sp)
     }
 }
