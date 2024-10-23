@@ -1,5 +1,6 @@
 package com.akashi.notesapp.presentation.components
 
+import android.provider.ContactsContract.CommonDataKinds.Note
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
